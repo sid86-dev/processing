@@ -40,5 +40,8 @@ jobs:
 # #       - name: Clean temp directory
 # #         run: rm -rf *
 # #         working-directory: ./Test
-      - name: Run tests
-        run: python threading_.py, python async_.py     
+      - name: Run async
+        run: python async_.py 
+        
+      - name: Run threading
+        run: python threading_.py 
