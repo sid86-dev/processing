@@ -5,8 +5,8 @@ async def main():
     print("A")
     await asyncio.sleep(5)
     return_value = await task
-    print(f"Return value = {return_value}")
     print("B")
+    print(f"Return value = {return_value}")
 
 
 async def cal():
