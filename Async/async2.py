@@ -8,7 +8,6 @@ async def main():
     c = return_value + 20
     print(f"Return value = {c}")
 
-
 async def cal():
     await asyncio.sleep(2)
     a = 1+5
