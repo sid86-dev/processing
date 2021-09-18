@@ -27,17 +27,6 @@ def cal_2():
 
 threads = []
 
-"""
-for _ in range(10):
-    t1 = threading.Thread(target=cal_1)
-    # t2 = threading.Thread(target=cal_2)
-    t1.start()
-    threads.append[t1]    
-    # threads.append[t2]    
-
-for thread in threads:
-    thread.join()"""
-
 t1 = threading.Thread(target=cal_1)
 t2 = threading.Thread(target=cal_2)
 
