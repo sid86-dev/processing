@@ -1,22 +1,8 @@
-import requests
 import time
 from pie_test import*
 
 
-
-# api-endpoint
-URL = "https://piencrypt.herokuapp.com/test/sid86"
-
-
 start = time.perf_counter()
-
-def req():
-    # request to url
-    r = requests.get(url = URL)
-    data = r.json()
-    secret_code = data['PiEncrypt']
-    print(f"Secret = {secret_code}")
-
 
     
 def cal():
@@ -36,12 +22,17 @@ def cal():
     c = b - a
     # print(c)
     d = c - 1000000000
-    print(f"Return value = {d}")
-    
+    lst = []
+    for _ in range(10000):
+        d += d
+        lst.append(d)
 
-cal()
-req()
+    time.sleep(0.1)
+    r = lst[::-1]
+    return r
+   
+for _ in range(100):
+    cal()
+
 finish = time.perf_counter()
 print(f"Finished in {round(finish-start, 2)} second(s)")
-
-unittest.main()
