@@ -1,5 +1,6 @@
 import asyncio
 
+
 async def fetch_data():
     print('start fetching')
     await asyncio.sleep(1)
@@ -20,5 +21,6 @@ async def main():
     value = await task1
     print(value)
     await task2
+
 
 asyncio.run(main())
