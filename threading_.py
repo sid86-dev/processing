@@ -9,7 +9,7 @@ def cal_1():
     num = 5
     while True:
         num += num
-        if num >= 10000000000000:
+        if num >= 10000000000000000000000000000:
             break
     time.sleep(1)
     print(f'Done Process 1 at {num}')
@@ -20,7 +20,7 @@ def cal_2():
     num = 5
     while True:
         num += num
-        if num >= 100000:
+        if num >= 1000000000000000000000:
             break
     time.sleep(1)
     print(f'Done Process 2 at {num}')
