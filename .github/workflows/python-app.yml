@@ -40,9 +40,9 @@ jobs:
         working-directory: ./speeding
         
       - name: Run numba
-        run: python numba_python.py
         working-directory: ./speeding
+        run: python numba_python.py
         
       - name: Run normal
-        run: python normal.py
         working-directory: ./speeding
+        run: python normal.py
