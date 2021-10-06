@@ -1,7 +1,8 @@
 import redis
+from config import*
 
-r = redis.Redis(host='redis-12393.c10.us-east-1-4.ec2.cloud.redislabs.com', port=12393, 
-                password='J9BmwAzuZuFNHY6Xg6u2pXRci0dJRnkH')
+r = redis.Redis(host=my_host, port=my_port, 
+                password=my_password)
 
 # r.mset({'name':'sid','age':'17'})
 
